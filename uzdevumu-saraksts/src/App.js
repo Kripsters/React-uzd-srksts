@@ -1,10 +1,13 @@
 import "./App.css";
-import jsonteksts from "./tektsts.JSON";
+import { data } from "./tektsts";
+import SortCompleted from "./SortCompleted.js";
 
 function App() {
+  console.log(data);
   return (
     <>
-      <h1>hi</h1>
+      <h1>{data[0].title}</h1>
+      <SortCompleted dater={data} />
     </>
   );
 }

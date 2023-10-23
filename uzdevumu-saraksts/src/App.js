@@ -1,4 +1,3 @@
-import "./App.css";
 import { data } from "./tektsts";
 import SortCompleted from "./SortCompleted.js";
 

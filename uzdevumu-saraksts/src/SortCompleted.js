@@ -1,13 +1,11 @@
 function SortCompleted(props) {
   let CompletedUsers = [];
-  const datera = props.dater.map((user, indekss) => {
+  const datera = props.dater.map(user => {
     if (user.completed) {
-      CompletedUsers.push(user);
-    } else {
-      return null;
+      console.log(user.title);
+      return <h1> {user.title} </h1>;
     }
   });
-  return console.log(CompletedUsers);
 }
 
 export default SortCompleted;
